@@ -1,11 +1,11 @@
 Metadata:
 	Title: Red Alert 2
 	Description: The Soviet Union is back!\nThis time to conquer the United States...
-	Version: {DEV_VERSION}
+	Version: git-ef5d7b3
 	Author: the RA2 mod team
 
 RequiresMods:
-	modchooser: {DEV_VERSION}
+	modchooser: git-f72614f
 
 Packages:
 	~^Content/ra2
@@ -46,7 +46,7 @@ Packages:
 
 MapFolders:
 	ra2|maps: System
-	~^maps/ra2/{DEV_VERSION}: User
+	~^maps/ra2/git-ef5d7b3: User
 
 Rules:
 	ra2|rules/proxy-actors.yaml
