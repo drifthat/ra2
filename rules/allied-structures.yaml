@@ -19,7 +19,7 @@ gacnst:
 	Valued:
 		Cost: 2500
 	Production:
-		Produces: Building,Support
+		Produces: Building, Support
 	Tooltip:
 		Name: Construction Yard
 	BaseBuilding:
@@ -28,6 +28,22 @@ gacnst:
 		Offset: 1,1
 		Facing: 96
 		DeployCursor: undeploy
+	ProductionQueue@Building:
+		Type: Building
+		#Factions: allies
+		Group: Building
+		LowPowerSlowdown: 3
+		QueuedAudio: Building
+		ReadyAudio: ConstructionComplete
+	ProductionQueue@Support:
+		Type: Support
+		#Factions: allies
+		Group: Support
+		LowPowerSlowdown: 3
+		QueuedAudio: Building
+		ReadyAudio: ConstructionComplete
+	# PrimaryBuilding:
+		# PrimaryCondition: primary		
 	ProductionBar@Building:
 		ProductionType: Building
 	ProductionBar@Support:
@@ -136,8 +152,13 @@ gapile:
 		ExitCell: 2, 2
 	Production:
 		Produces: Infantry
-	PrimaryBuilding:
-		PrimaryCondition: primary
+	ProductionQueue:
+		Type: Infantry
+		Group: Infantry
+		RequireOwner: false
+		LowPowerSlowdown: 3
+	# PrimaryBuilding:
+		# PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -279,8 +300,13 @@ gaairc:
 	Production:
 		Produces: Aircraft
 	ProductionBar:
-	PrimaryBuilding:
-		PrimaryCondition: primary
+	ProductionQueue:
+		Type: Aircraft
+		Group: Aircraft
+		RequireOwner: false
+		LowPowerSlowdown: 3	
+	# PrimaryBuilding:
+		# PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -351,8 +377,13 @@ gaweap:
 		ExitCell: 4,1
 	Production:
 		Produces: Vehicle
-	PrimaryBuilding:
-		PrimaryCondition: primary
+	ProductionQueue:
+		Type: Vehicle
+		Group: Vehicle
+		RequireOwner: false
+		LowPowerSlowdown: 3
+	# PrimaryBuilding:
+		# PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -473,8 +504,13 @@ gayard:
 		ExitCell: 5,5
 	Production:
 		Produces: Ship
-	PrimaryBuilding:
-		PrimaryCondition: primary
+	ProductionQueue:
+		Type: Ship
+		Group: Ship
+		RequireOwner: false
+		LowPowerSlowdown: 3		
+	# PrimaryBuilding:
+		# PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY

@@ -667,11 +667,20 @@ production-icons-soviets: chrome.png
 # GENERIC
 # -----------------------------------------------------------------------------------
 
-scrollbar: buttons.png
-	down_arrow: 116,140,16,16
-	down_pressed: 116,140,16,16
-	up_arrow: 132,140,16,16
-	up_pressed: 132,140,16,16
+# scrollbar: buttons.png
+	# down_arrow: 116,140,16,16
+	# down_pressed: 116,140,16,16
+	# up_arrow: 132,140,16,16
+	# up_pressed: 132,140,16,16
+scrollbar: td_chrome.png
+	down_arrow: 304,0,16,16
+	down_pressed: 304,16,16,16
+	up_arrow: 304,32,16,16
+	up_pressed: 304,48,16,16
+	right_arrow: 320,48,16,16
+	right_pressed: 336,48,16,16
+	left_arrow: 352,48,16,16
+	left_pressed: 368,48,16,16	
 
 sidebar-bits: chrome.png
 	production-tooltip-time: 250, 357, 19, 19
