@@ -30,6 +30,22 @@ nacnst:
 		Offset: 1,1
 		Facing: 96
 		DeployCursor: undeploy
+	ProductionQueue@Building:
+		Type: Building
+		#Factions: soviets
+		Group: Building
+		LowPowerSlowdown: 3
+		QueuedAudio: Building
+		ReadyAudio: ConstructionComplete
+	ProductionQueue@Support:
+		Type: Support
+		#Factions: soviets
+		Group: Support
+		LowPowerSlowdown: 3
+		QueuedAudio: Building
+		ReadyAudio: ConstructionComplete
+	# PrimaryBuilding:
+		# PrimaryCondition: primary		
 	ProductionBar@Building:
 		ProductionType: Building
 	ProductionBar@Support:
@@ -152,8 +168,13 @@ nahand:
 		ExitCell: 2, 2
 	Production:
 		Produces: Infantry
-	PrimaryBuilding:
-		PrimaryCondition: primary
+	ProductionQueue:
+		Type: Infantry
+		Group: Infantry
+		RequireOwner: false
+		LowPowerSlowdown: 3		
+	# PrimaryBuilding:
+		# PrimaryCondition: primary
 	RallyPoint:
 		Offset: 3,3
 		Palette: mouse
@@ -309,8 +330,13 @@ naweap:
 		ExitCell: 5,1
 	Production:
 		Produces: Vehicle
-	PrimaryBuilding:
-		PrimaryCondition: primary
+	ProductionQueue:
+		Type: Vehicle
+		Group: Vehicle
+		RequireOwner: false
+		LowPowerSlowdown: 3			
+	# PrimaryBuilding:
+		# PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
@@ -429,8 +455,13 @@ nayard:
 		ExitCell: 5,5
 	Production:
 		Produces: Ship
-	PrimaryBuilding:
-		PrimaryCondition: primary
+	ProductionQueue:
+		Type: Ship
+		Group: Ship
+		RequireOwner: false
+		LowPowerSlowdown: 3				
+	# PrimaryBuilding:
+		# PrimaryCondition: primary
 	WithTextDecoration@primary:
 		RequiresSelection: true
 		Text: PRIMARY
