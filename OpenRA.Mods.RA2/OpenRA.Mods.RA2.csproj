@@ -53,11 +53,6 @@
     </Reference>
     <Reference Include="Eluant">
       <HintPath>dependencies\Eluant.dll</HintPath>
-    <Reference Include="OpenRA.Mods.TS">
-      <HintPath>dependencies\OpenRA.Mods.TS.dll</HintPath>
-    </Reference>
-    <Reference Include="Eluant">
-      <HintPath>dependencies\Eluant.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
